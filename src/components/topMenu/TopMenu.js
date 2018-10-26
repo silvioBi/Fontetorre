@@ -1,4 +1,6 @@
 import React from 'react';
+import './topMenu.css';
+
 import {
   Collapse,
   Navbar,
@@ -29,7 +31,7 @@ export default class TopMenu extends React.Component {
   }
   render() {
     return (
-      <div className="TopMenu">
+      <div id="TopMenu">
         <Navbar dark expand="md">
           <NavbarBrand href="/">reactstrap</NavbarBrand>
           <NavbarToggler onClick={this.toggle} />
