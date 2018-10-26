@@ -26,3 +26,17 @@
 .product-card:hover {
     margin-top: 5px;
 }
+
+.buy {
+    top: 131px;
+    right: 10px;
+    z-index: 2;
+    width: 70px;
+    height: 70px;
+    background-color: #06d6a0;
+    display: block;
+    border-radius: 50%;
+    position: absolute;
+    font-size: 36px;
+    color: #fff;
+}

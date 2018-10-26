@@ -52,3 +52,12 @@
         transform-origin: 100% 0;
     }
 }
+
+@media (max-width: 669px) {
+    #title-intro {
+        width: 80%;
+    }
+    #bottle-illustration {
+        display: none;
+    }
+}
