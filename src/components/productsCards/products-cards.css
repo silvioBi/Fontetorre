@@ -12,8 +12,13 @@
     border-top-right-radius: 10px !important;
 }
 
+.product-card-title {
+    margin-top: 2em;
+}
+
 .product-card {
     width: 300px;
+    min-height: 350px;
     border-radius: 10px;
     webkit-box-shadow: 0 15px 35px rgba(50, 50, 93, .1), 0 5px 15px rgba(0, 0, 0, .07);
     box-shadow: 0 15px 35px rgba(50, 50, 93, .1), 0 5px 15px rgba(0, 0, 0, .07);
@@ -27,9 +32,9 @@
     margin-top: 5px;
 }
 
-.buy {
+.product-card-button {
+    cursor: pointer;
     top: 131px;
-    right: 10px;
     z-index: 2;
     width: 70px;
     height: 70px;
@@ -39,4 +44,39 @@
     position: absolute;
     font-size: 36px;
     color: #fff;
+}
+
+.buy {
+    right: 15px;
+}
+
+.recycle {
+    right: 100px;
+}
+
+.price {
+    font-size: 2em;
+    font-weight: 900;
+    display: block;
+    width: 100px;
+    margin: 20px auto 0;
+    position: relative;
+}
+
+.price:after, .price:before {
+    content: "";
+    height: 1px;
+    width: 50px;
+    display: block;
+    position: absolute;
+    background-color: #ddd;
+    top: 27px;
+}
+
+.price:before {
+    left: -50px;
+}
+
+.price:after {
+    right: -50px;
 }
