@@ -30,20 +30,20 @@
     display: flex;
     width: 1287px;
     left: 50%;
+    top: 0px !important;
     margin-left: -644px;
-    -webkit-transform: scale(.5) rotate(-12deg) translateX(50px);
-    transform: scale(.5) rotate(-12deg) translateX(50px);
+    -webkit-transform: scale(.9) rotate(-12deg) translateX(50px);
+    transform: scale(.9) rotate(-12deg) translateX(50px);
     -webkit-transform-origin: 50% 20%;
     transform-origin: 50% 20%;
 }
 
 #bottle-illustration #bottle {
-    width: 225px;
-    height: 467px;
     margin: 0 0 50px 176px;
 }
 
 #illustration-image {
+    height: 700px;
     z-index: 1;
 }
 
@@ -71,4 +71,8 @@
     .spacer {
         height: 450px;
     }
+}
+
+a:hover {
+    color: darkgreen !important;
 }

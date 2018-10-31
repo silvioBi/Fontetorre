@@ -13,7 +13,7 @@ import testimonials from '../../config/testimonials';
 const AppIllustration = () => (
   <div id='bottle-illustration'>
     <div id="bottle">
-      <img id="illustration-image" alt="bottle" src={require("../../media/bottle.jpg")}></img>
+      <img id="illustration-image" alt="bottle" src={require("../../media/bottle.png")}></img>
     </div>
   </div>
 )
