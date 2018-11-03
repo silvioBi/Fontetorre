@@ -1,14 +1,22 @@
-import React, { Component } from 'react';
-import './App.css';
+import React, { Component } from 'react'
+import './app.css'
 
-import TopMenu from '../topMenu/TopMenu';
-import ProductsCards from '../productsCards/ProductsCards';
-import Testimonials from '../testimonials/Testimonials';
-import Footer from '../footer/Footer';
+import TopMenu from '../topMenu/TopMenu'
+import ProductsCards from '../productsCards/ProductsCards'
+import Testimonials from '../testimonials/Testimonials'
+import Footer from '../footer/Footer'
+import Form from '../form/Form'
 
-// Products
-import products from '../../config/products';
-import testimonials from '../../config/testimonials';
+// Configuration files
+import products from '../../config/products'
+import testimonials from '../../config/testimonials'
+import forms from '../../config/forms'
+
+// Redux
+import { connect } from 'react-redux'
+const mapStateToProps = state => ({
+  modal: state.modal.modal,
+})
 
 const AppIllustration = () => (
   <div id='bottle-illustration'>
@@ -29,7 +37,12 @@ const Intro = ({ title, subTitle }) => (
 )
 
 class App extends Component {
+  state = {
+    show: this.props.modal,
+  }
   render() {
+    console.log(this.props.modal)
+    if (this.props.modal) return <Form forms={forms}/>
     return (
       <div>
         <div id="oblique-background"></div>
@@ -40,8 +53,10 @@ class App extends Component {
         <Testimonials testimonials={testimonials} />
         <Footer />
       </div>
-    );
+    )
   }
 }
 
-export default App;
+export default connect(
+  mapStateToProps,
+)(App)
