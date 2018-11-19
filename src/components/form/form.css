@@ -46,10 +46,23 @@ input.transparent-input {
 }
 */
 
-input:focus {   
-    color: red !important;
+input {   
+    background-color: transparent !important;
+    color: darkgreen !important;
 }
 
+input::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #45B649 !important;
+}
+
+.form-header {
+    background: linear-gradient(to bottom, rgba(232, 232, 232, 0.356), rgba(232, 232, 232, 0.7)), radial-gradient(ellipse at -40% -50%, rgba(69, 182, 63 ,0.25) 50%, rgba(232, 232, 232, 0.7) 50%);
+    background-size: 180% 200%;
+    overflow: hidden;
+    border-top-left-radius: 10px !important;
+    border-top-right-radius: 10px !important;
+    
+}
 
 .form-container{
     padding-top: 60px !important;
@@ -57,8 +70,24 @@ input:focus {
     max-width: 950px;
 }
 
+.form-card-body {
+    padding: 2em;
+    color: #45B649 !important;
+}
+
 .form-card {
-    padding: 1em;
+    border-radius: 10px;
+    webkit-box-shadow: 0 15px 35px rgba(50, 50, 93, .1), 0 5px 15px rgba(0, 0, 0, .07);
+    box-shadow: 0 15px 35px rgba(50, 50, 93, .1), 0 5px 15px rgba(0, 0, 0, .07);
+}
+
+.form-title {
+    margin-bottom: 35px;
+    color: darkgreen !important;
+}
+
+.white {
+    color: white !important;
 }
 
 .close {
@@ -74,7 +103,7 @@ input:focus {
     opacity: 1;
   }
 
-  .input-group {
+  .input-group, .form-step-buttons {
       margin-top: 17px;
       margin-bottom:17px;
   }
@@ -100,8 +129,20 @@ input:focus {
     padding: 30px;
   }
 
+  .payment-form {
+      margin-top: 35px;
+  }
+
+
+  .rccs__card--unknown > div {
+    background: linear-gradient(150deg, #45B649 15%, #DCE35B) !important;
+  }
 @media (max-width: 880px) { 
   .form-steps {
+    display: none !important;
+  }
+
+  .rccs {
     display: none !important;
   }
 }

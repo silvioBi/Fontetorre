@@ -16,19 +16,11 @@ const forms = {
                 ]
             },
             {
-                title: "Payment details",
+                title: "Payment Information",
                 titleIcon: <FaCreditCard style={{ paddingBottom: '5px' }} />,
                 fields: [
                     {
-                        label: 'Quantity',
-                        icon: <FaSortNumericUp style={{ paddingBottom: '5px' }} />,
-                        kind: 'input',
-                        type: 'number',
-                        name: 'quantity',
-                        value: 1,
-                    },
-                    {
-                        label: 'Payment Details',
+                        label: 'Card Details',
                         kind: 'payment',
                         icon: <FaCreditCard style={{ paddingBottom: '5px' }} />,
                     }
@@ -37,5 +29,20 @@ const forms = {
         ]
     }
 }
+
+
+/*
+Example of simple input
+
+{
+    label: 'Quantity',
+    icon: <FaSortNumericUp style={{ paddingBottom: '5px' }} />,
+    kind: 'input',
+    type: 'number',
+    name: 'quantity',
+    value: 1,
+}
+
+*/
 
 export default forms

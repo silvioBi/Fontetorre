@@ -31,7 +31,7 @@
   vertical-align: top;
 }
 .rc-steps-item-icon {
-  border: 1px solid #ccc;
+  border: 1px solid #16a000;
   width: 26px;
   height: 26px;
   line-height: 26px;
@@ -44,7 +44,7 @@
 .rc-steps-item-icon > .rc-steps-icon {
   line-height: 1;
   top: -1px;
-  color: #45B649;
+  color: #1e8c0e;
   position: relative;
 }
 .rc-steps-item-icon > .rc-steps-icon.rcicon {
@@ -62,7 +62,7 @@
 .rc-steps-item-tail:after {
   content: '';
   display: inline-block;
-  background: #e9e9e9;
+  background: #a9ea9f;
   height: 1px;
   border-radius: 1px;
   width: 100%;
@@ -74,7 +74,7 @@
 .rc-steps-item-title {
   font-size: 14px;
   margin-bottom: 4px;
-  color: #666;
+  color: #19770b;
   font-weight: bold;
   display: inline-block;
   padding-right: 10px;
@@ -84,7 +84,7 @@
   content: '';
   height: 1px;
   width: 1000px;
-  background: #e9e9e9;
+  background: #a9ea9f;
   display: block;
   position: absolute;
   top: 0.55em;
@@ -95,80 +95,80 @@
   color: #999;
 }
 .rc-steps-item-wait .rc-steps-item-icon {
-  border-color: #ccc;
-  background-color: #fff;
+  border-color: #16a000;
+  background-color: #afeda6;
 }
 .rc-steps-item-wait .rc-steps-item-icon > .rc-steps-icon {
-  color: #ccc;
+  color: #16a000;
 }
 .rc-steps-item-wait .rc-steps-item-icon > .rc-steps-icon .rc-steps-icon-dot {
-  background: #ccc;
+  background: #16a000;
 }
 .rc-steps-item-wait .rc-steps-item-title {
   color: rgba(0, 0, 0, 0.43);
 }
 .rc-steps-item-wait .rc-steps-item-title:after {
-  background-color: #e9e9e9;
+  background-color: #a9ea9f;
 }
 .rc-steps-item-wait .rc-steps-item-description {
   color: rgba(0, 0, 0, 0.43);
 }
 .rc-steps-item-wait .rc-steps-item-tail:after {
-  background-color: #e9e9e9;
+  background-color: #a9ea9f;
 }
 .rc-steps-item-process .rc-steps-item-icon {
-  border-color: #45B649;
-  background-color: #fff;
+  border-color: #1e8c0e;
+  background-color: #afeda6;
 }
 .rc-steps-item-process .rc-steps-item-icon > .rc-steps-icon {
-  color: #45B649;
+  color: #1e8c0e;
 }
 .rc-steps-item-process .rc-steps-item-icon > .rc-steps-icon .rc-steps-icon-dot {
-  background: #45B649;
+  background: #1e8c0e;
 }
 .rc-steps-item-process .rc-steps-item-title {
   color: rgba(0, 0, 0, 0.65);
 }
 .rc-steps-item-process .rc-steps-item-title:after {
-  background-color: #e9e9e9;
+  background-color: #a9ea9f;
 }
 .rc-steps-item-process .rc-steps-item-description {
   color: rgba(0, 0, 0, 0.65);
 }
 .rc-steps-item-process .rc-steps-item-tail:after {
-  background-color: #e9e9e9;
+  background-color: #a9ea9f;
 }
 .rc-steps-item-process .rc-steps-item-icon {
-  background: #45B649;
+  background: #1e8c0e;
 }
 .rc-steps-item-process .rc-steps-item-icon > .rc-steps-icon {
-  color: #fff;
+  color: #afeda6;
 }
 .rc-steps-item-finish .rc-steps-item-icon {
-  border-color: #45B649;
-  background-color: #fff;
+  border-color: #1e8c0e;
+  background-color: #afeda6;
 }
 .rc-steps-item-finish .rc-steps-item-icon > .rc-steps-icon {
-  color: #45B649;
+  color: #1e8c0e;
 }
 .rc-steps-item-finish .rc-steps-item-icon > .rc-steps-icon .rc-steps-icon-dot {
-  background: #45B649;
+  background: #1e8c0e;
 }
 .rc-steps-item-finish .rc-steps-item-title {
   color: rgba(0, 0, 0, 0.43);
 }
 .rc-steps-item-finish .rc-steps-item-title:after {
-  background-color: #45B649;
+  background-color: #1e8c0e;
 }
 .rc-steps-item-finish .rc-steps-item-description {
   color: rgba(0, 0, 0, 0.43);
 }
 .rc-steps-item-finish .rc-steps-item-tail:after {
-  background-color: #45B649;
+  background-color: #1e8c0e;
 }
 .rc-steps-item-error .rc-steps-item-icon {
   border-color: #f50;
-  background-color: #fff;
+  background-color: #afeda6;
 }
 .rc-steps-item-error .rc-steps-item-icon > .rc-steps-icon {
   color: #f50;
@@ -180,13 +180,13 @@
   color: #f50;
 }
 .rc-steps-item-error .rc-steps-item-title:after {
-  background-color: #e9e9e9;
+  background-color: #a9ea9f;
 }
 .rc-steps-item-error .rc-steps-item-description {
   color: #f50;
 }
 .rc-steps-item-error .rc-steps-item-tail:after {
-  background-color: #e9e9e9;
+  background-color: #a9ea9f;
 }
 .rc-steps-item.rc-steps-next-error .rc-steps-item-title:after {
   background: #f50;
@@ -216,7 +216,7 @@
   height: 20px;
 }
 .rc-steps-item-custom.rc-steps-item-process .rc-steps-item-icon > .rc-steps-icon {
-  color: #45B649;
+  color: #1e8c0e;
 }
 .rc-steps-small .rc-steps-item-icon {
   width: 18px;
@@ -239,7 +239,7 @@
 .rc-steps-small .rc-steps-item-title {
   font-size: 12px;
   margin-bottom: 4px;
-  color: #666;
+  color: #19770b;
   font-weight: bold;
 }
 .rc-steps-small .rc-steps-item-description {
