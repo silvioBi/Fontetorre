@@ -1,6 +1,6 @@
 import { combineReducers } from 'redux'
-import modal from './modal'
+import modalHandler from './modal'
 
 export default combineReducers({
-    modal,
+    modalHandler,
 })

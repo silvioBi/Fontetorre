@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import ReactDOM from 'react-dom'
 import './app.css'
 
 import TopMenu from '../topMenu/TopMenu'
@@ -15,7 +16,7 @@ import forms from '../../config/forms'
 // Redux
 import { connect } from 'react-redux'
 const mapStateToProps = state => ({
-  modal: state.modal.modal,
+  modal: state.modalHandler.modal,
 })
 
 const AppIllustration = () => (
@@ -41,10 +42,14 @@ class App extends Component {
     show: this.props.modal,
   }
   render() {
-    console.log(this.props.modal)
-    if (this.props.modal) return <Form forms={forms}/>
     return (
-      <div>
+      <div id='app'>
+        {this.props.modal ?
+          ReactDOM.createPortal(
+            <div className='formModal'>
+              <Form forms={forms} />
+            </div>,
+            document.getElementById("portal")) : null}
         <div id="oblique-background"></div>
         <AppIllustration />
         <TopMenu />

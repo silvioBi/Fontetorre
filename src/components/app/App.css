@@ -1,10 +1,29 @@
-body {
-    height: 100%;
-    padding: 0;
-}
-#root {
+body.no-scrolling {
     overflow: hidden;
+}
+
+body {
+    max-width: 100% !important;
+    overflow-x: hidden;
+}
+
+#portal {
+    position: relative;
+    z-index: 999;
+}
+
+.formModal {
+    position: fixed;
     height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    overflow: scroll;
+    background: linear-gradient(150deg, #45B649 15%, #DCE35B);
+}
+
+.green-background {
+   /*background: linear-gradient(150deg, #45B649 15%, #DCE35B);*/
 }
 
 #oblique-background {

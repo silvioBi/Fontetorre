@@ -36,11 +36,11 @@
     position: absolute;
     font-size: 39px;
     color: #fff;
-    transition: transform 1s;
+    transition: transform .5s;
 }
 
 .scaled {
-    -webkit-transform: scale(90);
+    -webkit-transform: scale(60);
     z-index: 3;
 }
 
