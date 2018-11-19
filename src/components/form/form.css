@@ -46,6 +46,11 @@ input.transparent-input {
 }
 */
 
+input:focus {   
+    color: red !important;
+}
+
+
 .form-container{
     padding-top: 60px !important;
     padding-bottom: 60px !important;
@@ -67,6 +72,11 @@ input.transparent-input {
 
   .close:hover {
     opacity: 1;
+  }
+
+  .input-group {
+      margin-top: 17px;
+      margin-bottom:17px;
   }
 
   .close:before, .close:after {

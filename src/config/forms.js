@@ -11,31 +11,13 @@ const forms = {
                 titleIcon: <FaShippingFast style={{ paddingBottom: '5px' }} />,
                 fields: [
                     {
-                        label: 'Quantity',
-                        icon: <FaSortNumericUp style={{ paddingBottom: '5px' }} />,
-                        kind: 'input',
-                        type: 'number',
-                        name: 'quantity',
-                        value: 1,
+                        kind: 'address',
                     },
-                    {
-                        label: 'Address',
-                        icon: <FaHome style={{ paddingBottom: '5px' }} />,
-                        kind: 'input',
-                        type: 'text',
-                        name: 'address',
-                        placeholder: 'Address',
-                    },
-                    {
-                        label: 'Payment Details',
-                        kind: 'payment',
-                        icon: <FaCreditCard style={{ paddingBottom: '5px' }} />,
-                    }
                 ]
             },
             {
-                title: "Address",
-                titleIcon: <FaWineBottle style={{ paddingBottom: '5px' }} />,
+                title: "Payment details",
+                titleIcon: <FaCreditCard style={{ paddingBottom: '5px' }} />,
                 fields: [
                     {
                         label: 'Quantity',
@@ -44,14 +26,6 @@ const forms = {
                         type: 'number',
                         name: 'quantity',
                         value: 1,
-                    },
-                    {
-                        label: 'Address',
-                        icon: <FaHome style={{ paddingBottom: '5px' }} />,
-                        kind: 'input',
-                        type: 'text',
-                        name: 'address',
-                        placeholder: 'Address',
                     },
                     {
                         label: 'Payment Details',
